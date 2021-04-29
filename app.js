@@ -4,6 +4,8 @@ const app = express();
 
 app.use(express.static('public'));
 
+app.use(express.static('script'));
+
 app.get('/', (req, res) => {
   res.render('hello.ejs');
 });
