@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet');
+
+body    {
+    line-height: 1.5;
+    font-family: Open Sans,Arial,sans-serif;
+}
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer {
+    background-color: rgb(255, 255, 255);
+    padding: 70px 0;
+}
+
+.container  {
+    max-width: 1170px;
+    margin: auto;
+}
+.row    {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul  {
+    list-style: none;
+}
+
+.fa {
+    padding-right: 10px;
+}
+
+.social-links   {
+    color: #313131;
+}
+
+.footer-col p   {
+color: #313131;
+padding-top: 5px;
+}
+
+.footer-col {
+    width: 20%;
+    padding: 0 15px;
+}
+
+.first img  {
+    width: 100px;
+}
+
+.first  {
+    margin-right: 50px;
+    width: 30%;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #313131;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+    
+}
+
+.footer-col h4::before  {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #FE8101;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child)  {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #313131;
+    display: block ;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #FE8101;
+    padding-left: 8px;
+}
+
+a.whatapp   {
+    background-color: #25D366;
+}
+
+a.facebook   {
+    background-color: #3b5998;
+}
+
+a.instagram   {
+    background-color: #fb3958;
+}
+
+.footer-col .social-links a {
+    display: inline-flex;
+    height: 33px;
+    width: 33px;
+    /* background-color: #313131; */
+    margin: 10px 10px 10px -3px;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+    border-radius: 30%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+
+
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+
+
+/* responsive */
+@media(max-width: 767px)    {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+
+    }
+}
+
+@media(max-width: 574px)    {
+    .footer-col {
+        width: 100%;
+        
+    }
+}
