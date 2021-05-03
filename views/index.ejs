@@ -42,6 +42,11 @@
 				<li><a href="">Masuk</a></li>
 			</ul>
 		</div>
+		<div class="header_drpdwn">
+			<ul>
+				<li></li>
+			</ul>
+		</div>
 	</header>
 	<!-- <header>
 		<div class="container">
@@ -75,7 +80,7 @@
 		  </div>
   
 		  <div class="slide-image">
-			<img src="slide3.jps" alt="" />
+			<img src="images/Campaign-Program-Donasi-Pendidikan-Panti.jpg" alt="" />
 		  </div>
 		</div>
   
@@ -102,19 +107,17 @@
                 <div class="footer-col">
                     <h4>Program</h4>
                     <ul>
-                        <li><a href="">Donasi</a></li>
-                        <li><a href="">Zakat</a></li>
-                        <li><a href="">Infaq</a></li>
-                        <li><a href="">Qurban</a></li>
+						<% footer_1.forEach((item) => { %>
+							<li><a href="<%= item.link %> "><%= item.name %> </a></li>
+						<% }); %>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Info</h4>
                     <ul>
-                        <li><a href="">Tentang kami</a></li>
-                        <li><a href="">Tim kami</a></li>
-                        <li><a href="">Syarat dan ketentuan</a></li>
-                        <li><a href="">Dokumen</a></li>
+						<% footer_2.forEach((item) => { %>
+							<li><a href="<%= item.link %> "><%= item.name %> </a></li>
+						<% }); %>
                     </ul>
                 </div>
 				<div class="footer-col">
@@ -146,5 +149,6 @@
     </footer>
 
 	<script type="text/javascript" src="main.js"></script>
+	
 </body>
 </html>
